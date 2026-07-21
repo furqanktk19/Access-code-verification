@@ -1,0 +1,13 @@
+
+
+input_code = int(input("Enter your access code:"))
+
+is_valid_code = input_code >= 1000 and input_code <= 9999
+
+is_member = input_code == 69 or input_code == 420 or input_code == 69420
+
+
+is_grand_access = is_valid_code or is_member
+is_denied_access = not is_grand_access
+
+print("Access Granted. Welcome back!" * is_grand_access + "Access denied" * is_denied_access )
